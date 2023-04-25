@@ -12,13 +12,20 @@ React Native requires [Node.js](https://nodejs.org/) v18+ and React native CLI t
 Android:
 ```sh
 npm i
-npm start android
+npx react-native run-android
 ```
 
 iOS:
 ```sh
 npm i
-npm start ios
+npx react-native run-ios
+```
+
+When changing the `.env` file, you need to rebuild the app on iOS:
+
+```sh
+cd ios; pod deintegrate && pod install; cd ..
+npx react-native run-ios
 ```
 
 License
