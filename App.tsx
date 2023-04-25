@@ -15,10 +15,12 @@ import * as Keychain from 'react-native-keychain';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
+import Config from 'react-native-config';
+
 const configs: Record<string, AuthConfiguration> = {
   fusionauth: {
-    issuer: 'https://xyz.ngrok-free.app',
-    clientId: 'fc22503d-f7d2-44fc-88cd-d1660b4b5c72',
+    issuer: Config.FUSIONAUTH_SERVER_URL!,
+    clientId: Config.FUSIONAUTH_CLIENT_ID!,
     redirectUrl: 'fusionauth.demo:/oauthredirect',
     scopes: ['offline_access'],
   },

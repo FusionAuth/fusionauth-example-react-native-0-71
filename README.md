@@ -5,12 +5,20 @@ Repository for Tutorial How to use FusionAuth with React Native.
 
 React Native requires [Node.js](https://nodejs.org/) v18+ and React native CLI to run.
 
-Install the dependencies and devDependencies and start the server.
+1. Copy `env.example` to `.env`
+2. Replace environment variables with your FusionAuth settings
+3. Install the dependencies and start the React Native app.
 
+Android:
 ```sh
-$ cd fusionauth-example-react-native-0-71
-$ npm install
-$ npm start ios
+npm i
+npm start android
+```
+
+iOS:
+```sh
+npm i
+npm start ios
 ```
 
 License
